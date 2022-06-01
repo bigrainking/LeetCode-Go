@@ -1,0 +1,31 @@
+
+<map>
+  <node ID="root" TEXT="哈希表">
+    <node TEXT="理论" ID="st7hlrfqhh" _mubu_text="%3Cspan%3E%E7%90%86%E8%AE%BA%3C/span%3E" STYLE="bubble" POSITION="default">
+      <node TEXT="哈希表原理" ID="g6bshXvlQS" _mubu_text="%3Cspan%20class=%22%20text-color-red%22%3E%E5%93%88%E5%B8%8C%E8%A1%A8%E5%8E%9F%E7%90%86%3C/span%3E" STYLE="fork">
+        <node TEXT="用来解决的问题:快速判断一个值是否在集合内" ID="YZX3JKYLbA" _mubu_text="%3Cspan%3E%E7%94%A8%E6%9D%A5%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98:%E5%BF%AB%E9%80%9F%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%80%BC%E6%98%AF%E5%90%A6%E5%9C%A8%E9%9B%86%E5%90%88%E5%86%85%3C/span%3E" STYLE="fork"/>
+        <node TEXT="插入：将一个键值对通过 哈希函数插入到哈希表内" ID="tP993PO2vU" _mubu_text="%3Cspan%3E%E6%8F%92%E5%85%A5%EF%BC%9A%E5%B0%86%E4%B8%80%E4%B8%AA%E9%94%AE%E5%80%BC%E5%AF%B9%E9%80%9A%E8%BF%87%20%3C/span%3E%3Cspan%20class=%22codespan%22%3E%E5%93%88%E5%B8%8C%E5%87%BD%E6%95%B0%3C/span%3E%3Cspan%3E%E6%8F%92%E5%85%A5%E5%88%B0%E5%93%88%E5%B8%8C%E8%A1%A8%E5%86%85%3C/span%3E" STYLE="fork"/>
+        <node TEXT="搜索键值对：通过 哈希函数找到键值对所在的桶，在桶内搜索键值对" ID="N9CRVY2X7v" _mubu_text="%3Cspan%3E%E6%90%9C%E7%B4%A2%E9%94%AE%E5%80%BC%E5%AF%B9%EF%BC%9A%E9%80%9A%E8%BF%87%20%3C/span%3E%3Cspan%20class=%22codespan%22%3E%E5%93%88%E5%B8%8C%E5%87%BD%E6%95%B0%3C/span%3E%3Cspan%3E%E6%89%BE%E5%88%B0%E9%94%AE%E5%80%BC%E5%AF%B9%E6%89%80%E5%9C%A8%E7%9A%84%E6%A1%B6%EF%BC%8C%E5%9C%A8%E6%A1%B6%E5%86%85%E6%90%9C%E7%B4%A2%E9%94%AE%E5%80%BC%E5%AF%B9%3C/span%3E" STYLE="fork"/>
+      </node>
+      <node TEXT="哈希函数" ID="mjIrQrjlX2" _mubu_text="%3Cspan%20class=%22%20text-color-red%22%3E%E5%93%88%E5%B8%8C%E5%87%BD%E6%95%B0%3C/span%3E" STYLE="fork">
+        <node TEXT="将需要存储的值(比如学生姓名)映射为哈希表中的索引，将学生姓名存储在索引对应的桶内：如y = x%base" ID="LnCqWuHrWp" _mubu_text="%3Cspan%3E%E5%B0%86%E9%9C%80%E8%A6%81%E5%AD%98%E5%82%A8%E7%9A%84%E5%80%BC(%E6%AF%94%E5%A6%82%E5%AD%A6%E7%94%9F%E5%A7%93%E5%90%8D)%E6%98%A0%E5%B0%84%E4%B8%BA%E5%93%88%E5%B8%8C%E8%A1%A8%E4%B8%AD%E7%9A%84%E7%B4%A2%E5%BC%95%EF%BC%8C%E5%B0%86%E5%AD%A6%E7%94%9F%E5%A7%93%E5%90%8D%E5%AD%98%E5%82%A8%E5%9C%A8%E7%B4%A2%E5%BC%95%E5%AF%B9%E5%BA%94%E7%9A%84%E6%A1%B6%E5%86%85%EF%BC%9A%E5%A6%82y%20=%20x%25base%3C/span%3E" STYLE="fork"/>
+      </node>
+      <node TEXT="冲突碰撞及解决" ID="Qd61aShSJ3" _mubu_text="%3Cspan%20class=%22%20text-color-red%22%3E%E5%86%B2%E7%AA%81%E7%A2%B0%E6%92%9E%E5%8F%8A%E8%A7%A3%E5%86%B3%3C/span%3E" STYLE="fork">
+        <node TEXT="冲突碰撞" ID="th6g0aOxd4" _mubu_text="%3Cspan%3E%E5%86%B2%E7%AA%81%E7%A2%B0%E6%92%9E%3C/span%3E" STYLE="fork">
+          <node TEXT="指多个元素通过哈希函数计算后都在同一个桶内(对应同一个索引)" ID="XAtLNE0fWQ" _mubu_text="%3Cspan%3E%E6%8C%87%E5%A4%9A%E4%B8%AA%E5%85%83%E7%B4%A0%E9%80%9A%E8%BF%87%E5%93%88%E5%B8%8C%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97%E5%90%8E%E9%83%BD%E5%9C%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E6%A1%B6%E5%86%85(%E5%AF%B9%E5%BA%94%E5%90%8C%E4%B8%80%E4%B8%AA%E7%B4%A2%E5%BC%95)%3C/span%3E" STYLE="fork"/>
+        </node>
+        <node TEXT="冲突解决" ID="CoIPNRt1oZ" _mubu_text="%3Cspan%3E%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3%3C/span%3E" STYLE="fork">
+          <node TEXT="拉链法：创建数组，数组元素为链表，每个桶用链表实现。[]当多个元素在同一个桶内时插入:找到对应的数组索引，插入到该索引下的链表尾" ID="LAOXwHidZZ" _mubu_text="%3Cspan%3E%E6%8B%89%E9%93%BE%E6%B3%95%EF%BC%9A%E5%88%9B%E5%BB%BA%E6%95%B0%E7%BB%84%EF%BC%8C%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E4%B8%BA%E9%93%BE%E8%A1%A8%EF%BC%8C%E6%AF%8F%E4%B8%AA%E6%A1%B6%E7%94%A8%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0%E3%80%82%5B%5D%E5%BD%93%E5%A4%9A%E4%B8%AA%E5%85%83%E7%B4%A0%E5%9C%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E6%A1%B6%E5%86%85%E6%97%B6%E6%8F%92%E5%85%A5:%E6%89%BE%E5%88%B0%E5%AF%B9%E5%BA%94%E7%9A%84%E6%95%B0%E7%BB%84%E7%B4%A2%E5%BC%95%EF%BC%8C%E6%8F%92%E5%85%A5%E5%88%B0%E8%AF%A5%E7%B4%A2%E5%BC%95%E4%B8%8B%E7%9A%84%E9%93%BE%E8%A1%A8%E5%B0%BE%3C/span%3E" STYLE="fork"/>
+          <node TEXT="开放定址法：数组实现**(tableSize)**，当当前元素对应索引已经有一个元素，则将当前元素放在索引的下一个位置，直到找到空的格子; hash+1,hash+2......" ID="H1mLE56tBQ" _mubu_text="%3Cspan%3E%E5%BC%80%E6%94%BE%E5%AE%9A%E5%9D%80%E6%B3%95%EF%BC%9A%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0**(tableSize)**%EF%BC%8C%E5%BD%93%E5%BD%93%E5%89%8D%E5%85%83%E7%B4%A0%E5%AF%B9%E5%BA%94%E7%B4%A2%E5%BC%95%E5%B7%B2%E7%BB%8F%E6%9C%89%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%EF%BC%8C%E5%88%99%E5%B0%86%E5%BD%93%E5%89%8D%E5%85%83%E7%B4%A0%E6%94%BE%E5%9C%A8%E7%B4%A2%E5%BC%95%E7%9A%84%E4%B8%8B%E4%B8%80%E4%B8%AA%E4%BD%8D%E7%BD%AE%EF%BC%8C%E7%9B%B4%E5%88%B0%E6%89%BE%E5%88%B0%E7%A9%BA%E7%9A%84%E6%A0%BC%E5%AD%90;%20hash+1,hash+2......%3C/span%3E" STYLE="fork"/>
+        </node>
+      </node>
+      <node TEXT="复杂度分析" ID="JBCWCB5mw2" _mubu_text="%3Cspan%20class=%22%20text-color-red%22%3E%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%3C/span%3E" STYLE="fork">
+        <node TEXT="空间复杂度：一共有N个键最小为O(N)" ID="rmrjO1950h" _mubu_text="%3Cspan%3E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%EF%BC%9A%E4%B8%80%E5%85%B1%E6%9C%89N%E4%B8%AA%E9%94%AE%E6%9C%80%E5%B0%8F%E4%B8%BAO(N)%3C/span%3E" STYLE="fork"/>
+        <node TEXT="时间复杂度：桶用数组实现" ID="M8wEZSZ7m5" _mubu_text="%3Cspan%3E%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%EF%BC%9A%E6%A1%B6%E7%94%A8%3C/span%3E%3Cspan%20class=%22codespan%22%3E%E6%95%B0%E7%BB%84%3C/span%3E%3Cspan%3E%E5%AE%9E%E7%8E%B0%3C/span%3E" STYLE="fork">
+          <node TEXT="桶内元素都很少，桶的最小值为常数级：插入搜索都是O(1) //找到桶O(1), 桶内搜索O(1)" ID="tldbGncj5F" _mubu_text="%3Cspan%3E%E6%A1%B6%E5%86%85%E5%85%83%E7%B4%A0%E9%83%BD%E5%BE%88%E5%B0%91%EF%BC%8C%E6%A1%B6%E7%9A%84%E6%9C%80%E5%B0%8F%E5%80%BC%E4%B8%BA%E5%B8%B8%E6%95%B0%E7%BA%A7%EF%BC%9A%E6%8F%92%E5%85%A5%E6%90%9C%E7%B4%A2%E9%83%BD%E6%98%AFO(1)%20//%E6%89%BE%E5%88%B0%E6%A1%B6O(1),%20%E6%A1%B6%E5%86%85%E6%90%9C%E7%B4%A2O(1)%3C/span%3E" STYLE="fork"/>
+          <node TEXT="桶内元素很多(冲突非常多),桶最大为N个容量(所有元素都在一个桶内)：插入O(1)[数组插入到末尾]，搜索为O(N) //桶数组要挨个搜索" ID="AhK5Ty0fFp" _mubu_text="%3Cspan%3E%E6%A1%B6%E5%86%85%E5%85%83%E7%B4%A0%E5%BE%88%E5%A4%9A(%E5%86%B2%E7%AA%81%E9%9D%9E%E5%B8%B8%E5%A4%9A),%E6%A1%B6%E6%9C%80%E5%A4%A7%E4%B8%BAN%E4%B8%AA%E5%AE%B9%E9%87%8F(%E6%89%80%E6%9C%89%E5%85%83%E7%B4%A0%E9%83%BD%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%A1%B6%E5%86%85)%EF%BC%9A%E6%8F%92%E5%85%A5O(1)%5B%E6%95%B0%E7%BB%84%E6%8F%92%E5%85%A5%E5%88%B0%E6%9C%AB%E5%B0%BE%5D%EF%BC%8C%3C/span%3E%3Cspan%20class=%22bold%22%3E%E6%90%9C%E7%B4%A2%E4%B8%BAO(N)%3C/span%3E%3Cspan%3E%20//%E6%A1%B6%E6%95%B0%E7%BB%84%E8%A6%81%E6%8C%A8%E4%B8%AA%E6%90%9C%E7%B4%A2%3C/span%3E" STYLE="fork"/>
+        </node>
+      </node>
+    </node>
+  </node>
+</map>
